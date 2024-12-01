@@ -14,6 +14,7 @@ Shrek Multi Tools is a versatile and powerful toolkit designed to streamline dev
 ## Fonctionalité 
 
 ```Account Nuker```
+```Server nuke (NO ADMIN)```
 ```Badge Changer```
 ```Clear Dm```
 ```Group Spammer```
