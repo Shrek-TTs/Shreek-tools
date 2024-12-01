@@ -60,12 +60,11 @@ Pour pouvoir lancer correctement le tools il vous suffit d'ouvrir le <run & inst
 
 
 ```bash
-git clone https://github.com/AtomTools/Multi-tools.git
+git clone https://github.com/Shrek-TTs/Shreek-tools.git
 cd Multi-tools
 ./install.sh
 ```
 
 ## Support 
 
-Pour nous contacter Voici le serveur : [Atom Tools](https://discord.gg/toolsfr)
-Et pour contactter le Owner : [Redwxll](<https://discord.com/users/989200862180155473>) 
+Pour nous contacter Voici le serveur : [Atom Tools](https://discord.gg/youtubesdfw)
