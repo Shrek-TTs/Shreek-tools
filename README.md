@@ -1,8 +1,8 @@
 ![image](https://cdn.discordapp.com/attachments/1263619795958370438/1271564702358442005/image.png?ex=66b7cc69&is=66b67ae9&hm=b3e85539ec372c27f08e85ac6fa4a0ea5b6950957dd19d08b68f99ced43f5e95&)
 
-# Atom Multi Tools
+# Shrek Multi Tools
 
-Atom Multi Tools is a versatile and powerful toolkit designed to streamline development and project management. Whether you're a developer, system administrator, or tech enthusiast, this set of tools enhances your workflow with ease.
+Shrek Multi Tools is a versatile and powerful toolkit designed to streamline development and project management. Whether you're a developer, system administrator, or tech enthusiast, this set of tools enhances your workflow with ease.
 
 ## Key Features
 
