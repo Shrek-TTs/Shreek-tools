@@ -56,14 +56,3 @@ Shrek Multi Tools is a versatile and powerful toolkit designed to streamline dev
 ## Installation 
 
 Pour pouvoir lancer correctement le tools il vous suffit d'ouvrir le <run & install> et profiter du tools !
-
-
-```bash
-git clone https://github.com/Shrek-TTs/Shreek-tools.git
-cd Multi-tools
-./install.sh
-```
-
-## Support 
-
-Pour nous contacter Voici le serveur : [Atom Tools](https://discord.gg/youtubesdfw)
