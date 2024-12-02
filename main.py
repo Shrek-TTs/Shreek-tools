@@ -397,10 +397,8 @@ def main():
             Cursor.ShowCursor()
             current_page += 1
         elif choice == 'prev' and current_page > 1:
-            Cursor.HideCursor()
             clear()
             display_ascii_art(page_scripts, current_page, total_pages, tools_info, current_theme)
-            Cursor.ShowCursor()
             current_page -= 1
         elif choice == 'exit':
             print('\n')
