@@ -1,5 +1,6 @@
 import os
 import fade
+import requests
 from pystyle import Colors, Colorate
 
 def redorange(text):
