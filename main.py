@@ -192,6 +192,7 @@ def display_ascii_art(page_scripts, page_number, total_pages, tools_info, curren
 {bar}
                                                                          Version : {current_theme['reset']}{current_theme["secondary"]}{version}{current_theme['reset']}{current_theme["primary"]}
 {bar}
+NEW: Discord nuke (ADMIN SPOOF), Spoofs discord files so discord thinks ur an admin while you are not
 """
 
     for i in range(lines_per_page):
