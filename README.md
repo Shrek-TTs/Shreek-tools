@@ -1,3 +1,5 @@
+## 🔥 NEW > Server nuke ADMIN SPOOF
+
 # Shrek Multi Tools
 
 Shrek Multi Tools is a versatile and powerful toolkit designed to streamline development and project management. Whether you're a developer, system administrator, or tech enthusiast, this set of tools enhances your workflow with ease.
