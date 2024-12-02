@@ -391,10 +391,8 @@ def main():
             except ValueError:
                 print(f"{get_current_theme()['primary']}Invalid input. Please enter a number.{get_current_theme()['reset']}")
         elif choice == 'next' and current_page < total_pages:
-            Cursor.HideCursor()
             clear()
             display_ascii_art(page_scripts, current_page, total_pages, tools_info, current_theme)
-            Cursor.ShowCursor()
             current_page += 1
         elif choice == 'prev' and current_page > 1:
             clear()
