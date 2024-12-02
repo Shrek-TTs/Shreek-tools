@@ -1,6 +1,5 @@
 @echo off
-title Atom Multi Tools
-
+pip install -r requirements.txt
 python main.py
 
 pause
