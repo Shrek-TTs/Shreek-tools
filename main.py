@@ -4,6 +4,7 @@ import time
 import threading
 import subprocess
 import json
+from pystyle import Cursor, Colors, Write
 from utils.theme import set_theme, get_current_theme, theme_banner, themes
 
 if os.name == 'nt':
@@ -20,17 +21,6 @@ def read_tools_info(json_path):
     with open(json_path, 'r') as file:
         data = json.load(file)
     return data
-
-
-try:
-    import pkg_resources
-    import fade
-    from blessed import Terminal
-    from pystyle import Add, Anime, Center, Colorate, Colors, Cursor, Write
-except Exception as e:
-    print(e)
-
-term = Terminal()
 
 def get_choice_windows(prompt):
     print(prompt, end='', flush=True)
@@ -288,35 +278,9 @@ def blink_warning_centered():
     text_width = max(len(line) for line in ascii_art.splitlines())
     text_height = len(ascii_art.splitlines())
 
-    with term.cbreak(), term.hidden_cursor():
-        x = (term.width // 2) - (text_width // 2)
-        y = (term.height // 2) - (text_height // 2)
-        
-        for _ in range(4):
-            for i, line in enumerate(orange_text.splitlines()):
-                print(term.move_xy(x, y + i) + line, end='', flush=True)
-            time.sleep(0.25)
-            for i in range(text_height):
-                print(term.move_xy(x, y + i) + ' ' * text_width, end='', flush=True)
-            time.sleep(0.25)
-        
-        print(term.clear(), end='', flush=True)
-        print(term.move_xy(0, 0), end='', flush=True)
-
-
 def warning_animation():
     icon_text = f"""
-      ____               
-     /___/\_     
-    _\   \/_/\__  
-  __\       \/_/\  
-  \   __    __ \ \  
- __\  \_\   \_\ \ \  __  
-/_/\\   __   __  \ \_/_/\          
-\_\/_\__\/\__\/\__\/_\_\/             
-   \_\/_/\       /_\_\/
-      \_\/       \_\/
-
+icontext
 """
     
 
@@ -330,9 +294,6 @@ Please use responsibly and at your own risk.
 
     blink_warning_centered()
 
-    combined_message = Add.Add(icon_text, warning_message, 3)
-    
-    Write.Print(Center.Center(combined_message),get_current_theme()['primary'], interval=0.0025)
     Write.Input("Press Enter to continue...", get_current_theme()['fade'], interval=0.1)
     
 def main():
